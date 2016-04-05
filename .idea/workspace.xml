@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb92003f-bee8-4358-a21b-b1c6b43d2052" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/migrations/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views.py" afterPath="" />
-    </list>
+    <list default="true" id="bb92003f-bee8-4358-a21b-b1c6b43d2052" name="Default" comment="" />
     <ignored path="wedwebsite.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
