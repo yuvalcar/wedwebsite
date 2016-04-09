@@ -74,7 +74,7 @@
         <entry file="file://$PROJECT_DIR$/wedweb/templates/invite.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.7580175">
-              <caret line="233" column="130" selection-start-line="233" selection-start-column="130" selection-end-line="233" selection-end-column="130" />
+              <caret line="233" column="72" selection-start-line="233" selection-start-column="72" selection-end-line="233" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -1019,7 +1019,7 @@
     <entry file="file://$PROJECT_DIR$/wedweb/templates/invite.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7580175">
-          <caret line="233" column="130" selection-start-line="233" selection-start-column="130" selection-end-line="233" selection-end-column="130" />
+          <caret line="233" column="72" selection-start-line="233" selection-start-column="72" selection-end-line="233" selection-end-column="72" />
           <folding />
         </state>
       </provider>
