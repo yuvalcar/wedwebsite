@@ -9,8 +9,8 @@ mod = Blueprint('invite', __name__)
 
 
 @mod.route("/")
-def invite(name=None):
-    return render_template('invite.html', name=name)
+def invite():
+    return render_template('invite.html')
 
 
 @mod.route("/rsvp")
