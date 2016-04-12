@@ -76,11 +76,6 @@ p {
     background-color: #222;
 }
 
-.text-faded {
-    color: rgba(255,255,255,.7);
-    font-family: 'Danidin';
-}
-
 #map-container{
     height: 500px;
     pointer-events: none;
@@ -189,18 +184,6 @@ header .header-content .header-content-inner p {
         max-width: 80%;
         font-size: 18px;
     }
-}
-
-.section-heading {
-    margin-top: 0;
-    font-family: 'Danidin', 'Open Sans';
-    color: #3abaa4;
-}
-
-.section-heading-english {
-    margin-top: 0;
-    font-family: 'Open Sans';
-    color: #f29895;
 }
 
 .service-box {
@@ -401,7 +384,7 @@ fieldset[disabled] .btn-primary.active {
     border: 0;
     border-radius: 300px;
     text-transform: uppercase;
-    font-family: 'Danidin';
+    font-family: 'Open Sans';
     font-weight: 700;
 }
 
