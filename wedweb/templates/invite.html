@@ -37,160 +37,44 @@
 
 <body id="page-top">
     <header>
-        <div class="header-content">
-        </div>
+        <div class="header-content"></div>
     </header>
 
-    <section class="container center-me" id="all">
-        <div class="row no-gutter">
+    <section class="container" id="all">
+        <div class="row">
             <img src="{{url_for('static', filename='img/all.png')}}" class="img-responsive center-block" alt="">
         </div>
     </section>
-<!--
-    <section class="container" id="happy">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">שמחים ונרגשים להזמינכם לחגוג עמנו</h2>
-            </div>
-        </div>
-        <div class="row">
-            <img src="{{url_for('static', filename='img/kav.png')}}" class="img-responsive center-block" alt="">
-        </div>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading-english">Happy to invite you to celebrate with us</h2>
-            </div>
-        </div>
-    </section>
 
-    <section class="no-padding" id="date">
-        <div class="container-fluid">
-            <div class="row no-gutter">
-                <img src="{{url_for('static', filename='img/text2.png')}}" class="img-responsive center-block" alt="">
-            </div>
-        </div>
-    </section>
-
-    <section class="no-padding" id="upside-down-wessing">
-        <div class="row no-gutter">
-            <img src="{{url_for('static', filename='img/upsidedown.png')}}" class="img-responsive center-block" alt="">
-        </div>
-    </section>
-
-    <section class="container" id="timeline">
-        <div class="row">
-            <div class="col-lg-4 col-md-8 text-center">
-                <h2 class="section-heading">15:00</h2>
-                <h2 class="section-heading">רוקדים</h2>
-                <h2 class="section-heading-english">Party</h2>
-            </div>
-            <div class="col-lg-4 col-md-8 text-center">
-                <h2 class="section-heading">14:30</h2>
-                <h2 class="section-heading">מתחתנים</h2>
-                <h2 class="section-heading-english">Ceremony</h2>
-            </div>
-            <div class="col-lg-4 col-md-8 text-center">
-                <h2 class="section-heading">12:00</h2>
-                <h2 class="section-heading">אוכלים</h2>
-                <h2 class="section-heading-english">Lunch</h2>
-            </div>
-        </div>
-        <div class="row">
-            <img src="{{url_for('static', filename='img/kav.png')}}" class="img-responsive pull-right" alt="">
-        </div>
-    </section>
-
-    <section class="container" id="bau">
-        <div class="row">
-            <div class="col-lg-8 col-md-16 text-center">
-                <h2 class="section-heading">בית האירועים ״באו״, דרך מנחם בגין 148</h2>
-                <div class="row">
-                    <ul class="list-inline">
-                        <li class="section-heading">חניה חופשית במקום</li>
-                        <li class="fa fa-2x fa-star wow bounceIn"></li>
-                        <li class="section-heading">תל אביב</li>
-                    </ul>
-                </div>
-                <h2 class="section-heading-english">148 Derech Menachem Begin St., Tel Aviv</h2>
-            </div>
-            <div class="col-lg-4 col-md-8">
-                <img src="{{url_for('static', filename='img/bau.png')}}" class="img-responsive center-block" alt="">
-            </div>
-        </div>
-        <div class="row">
-            <img src="{{url_for('static', filename='img/kav.png')}}" class="img-responsive pull-left" alt="">
-        </div>
-    </section>
-
-    <section class="container" id="family">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">נשמח לראותכם,</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6">
-                <h2 class="section-heading-english">Maayan, Yuval and our Families</h2>
-            </div>
-            <div class="col-lg-6">
-                <h2 class="section-heading pull-right">מעיין, יובל והמשפחות</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6">
-                <h2 class="section-heading">הורי החתן חביבה ומייק כרמל</h2>
-            </div>
-            <div class="col-lg-6">
-                <h2 class="section-heading pull-right">הורי הכלה מיכל ואבי שפירא</h2>
-            </div>
-        </div>
-        <div class="row">
-            <img src="{{url_for('static', filename='img/kav.png')}}" class="img-responsive pull-right" alt="">
-        </div>
-    </section>
-    <section class="container" id="rsvp">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">מגיעים?</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading-english">RSVP</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h3 class="section-heading">אנא אשרו הגעה</h3>
-            </div>
-        </div>
-    </section>
--->
     <section class="container no-padding" id="form">
-        <form role="form">
-            <div class="row col-lg-8 center-div">
-                <div class="form-group">
-                    <input type="text" class="form-control input-lg" id="name" placeholder="Name">
+        <form role="form" action="rsvp">
+            <div class="row">
+                <div class="form-group input-padding">
+                    <input type="text" class="form-control input-lg center-me cool-input" name="name" placeholder="Name">
                 </div>
             </div>
-            <div class="row col-lg-8">
-                <div class="form-group">
-                    <input type="number" class="form-control input-lg" id="phone" placeholder="Phone">
+            <div class="row">
+                <div class="form-group input-padding">
+                    <input type="text" class="form-control input-lg center-me cool-input" name="phone" placeholder="Phone">
                 </div>
             </div>
-            <div class="row col-lg-8">
-                <div class="form-group">
-                    <input type="number" class="form-control input-lg" id="guests" placeholder="No. of Guests">
+
+            <div class="row">
+                <div class="form-group input-padding">
+                    <input type="number" class="form-control input-lg center-me cool-input" name="guests" placeholder="No. of Guests">
                 </div>
             </div>
-            <div class="row col-lg-8">
-                <button type="submit" class="btn btn-default btn-xl wow tada center-block">Submit</button>
+
+            <div class="row">
+                <input type="submit" class="cool-button" value="text">
             </div>
         </form>
     </section>
 
+
+
     <section class="container">
-        <div id="map-container" class="center-block">
+        <div id="map-container" class="center-me">
         </div>
     </section>
 
@@ -209,7 +93,7 @@
     <!-- Plugin JavaScript -->
     <script src="{{url_for('static', filename='js/jquery.easing.min.js') }}"></script>
     <script src="{{url_for('static', filename='js/jquery.fittext.js') }}"></script>
-    <script src="{{url_for('static', filename='js/wow.min.js') }}"></script>
+    <script src="{{url_for('static', filename='js/angular.min.js') }}"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="{{url_for('static', filename='js/creative.js') }}"></script>
