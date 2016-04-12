@@ -19,8 +19,6 @@ def rsvp():
     phone = request.args.get('phone')
     guests = request.args.get('guests')
 
-    import IPython; IPython.embed() # NO_COMMIT
-
     if name is None:
         abort(404)
 
