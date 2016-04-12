@@ -76,11 +76,6 @@ p {
     background-color: #222;
 }
 
-#map-container{
-    height: 500px;
-    pointer-events: none;
-}
-
 .cool-input{
     border-color: #3abaa4;
     border-width: thick;
