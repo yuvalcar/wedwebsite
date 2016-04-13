@@ -82,6 +82,7 @@ p {
     width: 35%;
     height: 110%;
     text-align: center;
+    background-color: transparent;
 }
 
 .cool-button{
