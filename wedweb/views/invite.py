@@ -1,3 +1,4 @@
+import json
 from flask.blueprints import Blueprint
 from flask.templating import render_template
 from flask import abort, request
@@ -13,11 +14,12 @@ def invite():
     return render_template('invite.html')
 
 
-@mod.route("/rsvp")
+@mod.route("/rsvp", methods=['GET', 'POST'])
 def rsvp():
-    name = request.args.get('name')
-    phone = request.args.get('phone')
-    guests = request.args.get('guests')
+    data = json.loads(request.data)
+    name = data.get('name')
+    phone = data.get('phone')
+    guests = data.get('guests')
 
     if name is None:
         abort(404)
@@ -31,4 +33,4 @@ def rsvp():
     writer = GdriveWriter()
     writer.add_guests_to_gdrive(name, phone, guests)
 
-    return render_template('invite.html', name=name)
+    return render_template('invite.html')

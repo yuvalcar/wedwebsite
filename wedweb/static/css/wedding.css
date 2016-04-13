@@ -79,7 +79,7 @@ p {
 .cool-input{
     border-color: #3abaa4;
     border-width: thick;
-    width: 469px;
+    width: 35%;
     height: 110%;
     text-align: center;
 }
@@ -88,9 +88,9 @@ p {
     color: transparent;
     background-color: transparent;
     border: none;
-    width: 469px;
+    width: 35%;
     height: 109px;
-    background-image: url(../img/button1.png);
+    background: url(../img/button1.png) no-repeat center center;
 }
 
 .row{

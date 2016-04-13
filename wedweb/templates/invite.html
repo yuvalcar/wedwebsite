@@ -28,6 +28,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/favicon.png') }}">
 </head>
 
 <body id="page-top">
@@ -42,35 +43,29 @@
     </section>
 
     <section class="container no-padding" id="form">
-        <form role="form" action="rsvp">
-            <div class="row">
-                <div class="form-group input-padding">
-                    <input type="text" class="form-control input-lg center-me cool-input" name="name" placeholder="Name">
+        <div ng-app="wedwebApp" ng-controller="rsvpController">
+            <form>
+                <div class="row input-padding">
+                    <input type="text" ng-model="username" class="form-control input-lg center-me cool-input" placeholder="Name">
                 </div>
-            </div>
-            <div class="row">
-                <div class="form-group input-padding">
-                    <input type="text" class="form-control input-lg center-me cool-input" name="phone" placeholder="Phone">
+                <div class="row input-padding">
+                    <input type="text" ng-model="phone" class="form-control input-lg center-me cool-input" placeholder="Phone">
                 </div>
-            </div>
-
-            <div class="row">
-                <div class="form-group input-padding">
-                    <input type="number" class="form-control input-lg center-me cool-input" name="guests" placeholder="No. of Guests">
+                <div class="row input-padding">
+                    <input type="text" ng-model="guests" class="form-control input-lg center-me cool-input" placeholder="No. of Guests">
                 </div>
-            </div>
-
+            </form>
             <div class="row">
-                <input type="submit" class="cool-button" value="text">
+                <button ng-click="submit()" class="cool-button"/>
             </div>
-        </form>
+        </div>
     </section>
 
 
 
     <section class="container" id="map">
         <div class="row">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.6489312820436!2d34.79261761609903!3d32.078742881188504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4b97b7157b63%3A0x620fdca671460ca6!2sBau!5e0!3m2!1sen!2sil!4v1460497165358" width="700" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.6489312820436!2d34.79261761609903!3d32.078742881188504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4b97b7157b63%3A0x620fdca671460ca6!2sBau!5e0!3m2!1sen!2sil!4v1460497165358" width="70%" height="450" frameborder="0" style="border:0 pointer-event:none" allowfullscreen></iframe>
         </div>
     </section>
 
@@ -84,6 +79,11 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="{{url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+    <!-- Angular JS-->
+    <script src="{{url_for('static', filename='js/angular.min.js') }}"></script>
+
+    <script src="{{url_for('static', filename='js/rsvpController.js') }}"></script>
 
 </body>
 
