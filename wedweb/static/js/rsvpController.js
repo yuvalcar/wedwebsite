@@ -8,18 +8,18 @@ var app = angular.module('wedwebApp', []);
                     "background": 'url(static/img/button1.png) no-repeat center center',
                 };
 
-                $scope.md = new $window.MobileDetect($window.navigator.userAgent);
-
-                if($scope.md.mobile() !== null && $scope.md.mobile() !== 'undefined' && $scope.md.mobile() !== ''){
-                    $scope.headerStyle = {
-                        "background-image": 'url(static/img/header_mobile.jpg)',
-                    }
-                }
-                else{
-                    $scope.headerStyle = {
-                        "background-image": 'url(static/img/header.jpg)',
-                    }
-                }
+                //$scope.md = new $window.MobileDetect($window.navigator.userAgent);
+                //
+                //if($scope.md.mobile() !== null && $scope.md.mobile() !== 'undefined' && $scope.md.mobile() !== ''){
+                //    $scope.headerStyle = {
+                //        "background-image": 'url(static/img/header_mobile.jpg)',
+                //    }
+                //}
+                //else{
+                //    $scope.headerStyle = {
+                //        "background-image": 'url(static/img/header.jpg)',
+                //    }
+                //}
 
                 $scope.submit = function(){
                     $scope.dynamicStyle = {
