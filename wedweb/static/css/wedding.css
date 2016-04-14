@@ -121,12 +121,12 @@ header {
     max-height: 100%;
     text-align: center;
     color: #fff;
-    background-image: url(../img/header.jpg);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    background-image: url(../img/header.jpg);
 }
 
 header .header-content {

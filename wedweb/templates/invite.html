@@ -32,7 +32,7 @@
 </head>
 
 <body id="page-top">
-    <header>
+    <header ng-style="headerStyle">
         <div class="header-content"></div>
     </header>
 
@@ -42,7 +42,7 @@
         </div>
     </section>
 
-    <section class="container no-padding" id="form">
+    <section class="container" id="form">
         <div ng-app="wedwebApp" ng-controller="rsvpController">
             <form>
                 <div class="row input-padding">
@@ -60,8 +60,6 @@
             </div>
         </div>
     </section>
-
-
 
     <section class="container" id="map">
         <div class="row">
