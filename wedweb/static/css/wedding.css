@@ -78,7 +78,7 @@ p {
 
 .cool-input{
     border-color: #3abaa4;
-    border-width: thick;
+    border-width: 5px;
     width: 60%;
     height: 100%;
     text-align: center;
@@ -112,6 +112,10 @@ aside {
 
 .input-padding {
     padding-bottom: 25px;
+}
+
+.map-padding {
+    padding-top: 40px;
 }
 
 header {
@@ -165,20 +169,22 @@ header .header-content {
 
     .cool-input{
         border-color: #3abaa4;
-        border-width: thick;
-        width: 60%;
+        border-width: 5px;
+        width: 65%;
         height: 110%;
         text-align: center;
         background-color: transparent;
+        float: none;
     }
 
     .cool-button{
         color: transparent;
         background-color: transparent;
         border: none;
-        width: 60%;
+        width: 65%;
         height: 109px;
         background: url(../img/button1.png) no-repeat center center;
+        float: none;
     }
 }
 

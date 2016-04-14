@@ -3,23 +3,10 @@
  */
 
 var app = angular.module('wedwebApp', []);
-            app.controller('rsvpController', function($scope, $http, $window) {
+            app.controller('rsvpController', function($scope, $http) {
                 $scope.dynamicStyle = {
                     "background": 'url(static/img/button1.png) no-repeat center center',
                 };
-
-                //$scope.md = new $window.MobileDetect($window.navigator.userAgent);
-                //
-                //if($scope.md.mobile() !== null && $scope.md.mobile() !== 'undefined' && $scope.md.mobile() !== ''){
-                //    $scope.headerStyle = {
-                //        "background-image": 'url(static/img/header_mobile.jpg)',
-                //    }
-                //}
-                //else{
-                //    $scope.headerStyle = {
-                //        "background-image": 'url(static/img/header.jpg)',
-                //    }
-                //}
 
                 $scope.submit = function(){
                     $scope.dynamicStyle = {
@@ -33,10 +20,9 @@ var app = angular.module('wedwebApp', []);
 
                 $http.post('/rsvp', params).then(function success_cb(response){
                         $scope.dynamicStyle = {
-                            "background": 'url(static/img/button_receive.png) no-repeat center center'
+                            "background": 'url(static/img/button_receive.png) no-repeat center center',
+                            "disabled": 'true',
                         };
-
-                        //$location.url($location.host());
                     },
                     function error_cb(reponse) {
                         alert("Ho no!!!" + reponse.msg);

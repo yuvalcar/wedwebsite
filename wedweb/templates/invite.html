@@ -46,13 +46,13 @@
         <div ng-app="wedwebApp" ng-controller="rsvpController">
             <form>
                 <div class="row input-padding">
-                    <input type="text" ng-model="username" class="form-control input-lg center-me cool-input" placeholder="Name">
+                    <input type="text" ng-model="username" class="form-control input-lg center-block cool-input" placeholder="Name">
                 </div>
                 <div class="row input-padding">
-                    <input type="text" ng-model="phone" class="form-control input-lg center-me cool-input" placeholder="Phone">
+                    <input type="text" ng-model="phone" class="form-control input-lg center-block cool-input" placeholder="Phone">
                 </div>
                 <div class="row input-padding">
-                    <input type="text" ng-model="guests" class="form-control input-lg center-me cool-input" placeholder="No. of Guests">
+                    <input type="text" ng-model="guests" class="form-control input-lg center-block cool-input" placeholder="No. of Guests">
                 </div>
             </form>
             <div class="row">
@@ -70,7 +70,7 @@
     <section class="container">
         <div class="row">
             <a href="waze://?ll=32.0787429,34.7948063&z=6&navigate=true" target="_blank">
-                <img src="{{url_for('static', filename='img/waze.png')}}" class="img-responsive center-block" width=70% alt="">
+                <img src="{{url_for('static', filename='img/waze.png')}}" class="img-responsive center-block map-padding" width=70% alt="">
             </a>
         </div>
     </section>
@@ -84,7 +84,6 @@
 
 
     <script src="{{url_for('static', filename='js/rsvpController.js') }}"></script>
-    <script src="{{url_for('static', filename='js/mobile-detect.min.js') }}"></script>
 
 </body>
 
