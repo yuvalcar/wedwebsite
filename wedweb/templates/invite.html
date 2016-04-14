@@ -38,11 +38,11 @@
 
     <section class="container" id="all">
         <div class="row">
-            <img src="{{url_for('static', filename='img/all.png')}}" class="img-responsive center-block all-image" alt="">
+            <img src="{{url_for('static', filename='img/all.png')}}" class="img-responsive center-block" alt="">
         </div>
     </section>
 
-    <section class="container" id="form">
+    <section class="container no-padding" id="form">
         <div ng-app="wedwebApp" ng-controller="rsvpController">
             <form>
                 <div class="row input-padding">
@@ -70,7 +70,7 @@
     <section class="container">
         <div class="row">
             <a href="waze://?ll=32.0787429,34.7948063&z=6&navigate=true" target="_blank">
-                <img src="{{url_for('static', filename='img/waze.png')}}" class="img-responsive center-block" alt="">
+                <img src="{{url_for('static', filename='img/waze.png')}}" class="img-responsive center-block" width=70% alt="">
             </a>
         </div>
     </section>
