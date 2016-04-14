@@ -8,9 +8,11 @@ var app = angular.module('wedwebApp', []);
                     "background": 'url(static/img/button1.png) no-repeat center center',
                 };
 
-                if(typeof $window.orientation !== 'undefined'){
+                $scope.md = new $window.MobileDetect($window.navigator.userAgent);
+
+                if($scope.md.mobile()){
                     $scope.headerStyle = {
-                        "background-image": 'url(static/img/buffering.gif)',
+                        "background-image": 'url(static/img/button1.png)',
                     }
                 }
 
