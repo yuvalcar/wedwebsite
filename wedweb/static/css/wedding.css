@@ -94,6 +94,10 @@ p {
     background: url(../img/button1.png) no-repeat center center;
 }
 
+.all-image{
+    margin: auto auto 0 0;
+}
+
 .row{
     text-align: center;
     align-content: center;
@@ -179,6 +183,10 @@ header .header-content {
         width: 60%;
         height: 109px;
         background: url(../img/button1.png) no-repeat center center;
+    }
+
+    .all-image{
+        width: auto;
     }
 }
 
