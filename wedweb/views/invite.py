@@ -2,13 +2,12 @@ import json
 from flask.blueprints import Blueprint
 from flask.helpers import make_response
 from flask.templating import render_template
-from flask import abort, request, logging
+from flask import abort, request
 from wedweb.gdrive.gdrive_writer import GdriveWriter
-from wedweb import app
+from wedweb import app, logger
 
 
 mod = Blueprint('invite', __name__)
-logger = logging.create_logger(app)
 
 @mod.route("/")
 def invite():

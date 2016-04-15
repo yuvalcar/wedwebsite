@@ -1,9 +1,10 @@
-from flask import Flask
+from flask import Flask, logging
 from flask.templating import render_template
 from werkzeug.contrib.fixers import ProxyFix
 
 app = Flask(__name__)
 app.config.from_object('webconfig')
+logger = logging.create_logger(app)
 
 app.wsgi_app = ProxyFix(app.wsgi_app)
 
