@@ -78,9 +78,9 @@ p {
 
 .cool-input{
     border-color: #3abaa4;
-    border-width: 5px;
-    width: 60%;
-    height: 100%;
+    border-width: 3px;
+    width: 70%;
+    max-height: 80%;
     text-align: center;
     background-color: transparent;
     font-family: 'Roboto',sans-serif;
@@ -91,8 +91,8 @@ p {
     color: transparent;
     background-color: transparent;
     border: none;
-    width: 60%;
-    height: 109px;
+    width: 70%;
+    height: 80px;
     background: url(../img/button1.png) no-repeat center center;
 }
 
