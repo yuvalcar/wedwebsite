@@ -4,8 +4,7 @@ from flask.helpers import make_response
 from flask.templating import render_template
 from flask import abort, request
 from wedweb.gdrive.gdrive_writer import GdriveWriter
-from wedweb import app, logger
-
+from wedweb import app
 
 mod = Blueprint('invite', __name__)
 
@@ -33,6 +32,6 @@ def rsvp():
     writer = GdriveWriter()
     writer.add_guests_to_gdrive(name, phone, guests)
 
-    logger.info("Saved (%s,%s,%s) to gspread" % (name, phone, guests))
+    app.logger.info("Saved (%s,%s,%s) to gspread" % (name, phone, guests))
 
     return make_response(render_template('invite.html'))
