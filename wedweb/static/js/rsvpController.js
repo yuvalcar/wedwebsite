@@ -25,7 +25,7 @@ var app = angular.module('wedwebApp', []);
                         };
                     },
                     function error_cb(reponse) {
-                        alert("Ho no!!!" + reponse.msg);
+                        alert("Ho no!!! not all fields were filled :(");
                         $scope.dynamicStyle = {
                             "background": 'url(static/img/button1.png) no-repeat center center'
                         };
