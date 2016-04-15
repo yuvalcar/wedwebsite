@@ -133,6 +133,10 @@ aside {
     padding-bottom: 25px;
 }
 
+.waze{
+    max-width: 70%;
+}
+
 header {
     position: relative;
     width: 100%;
