@@ -15,7 +15,8 @@ var app = angular.module('wedwebApp', []);
 
             $scope.dynamicStyle = {
                 "background": 'url(static/img/buffering.gif) no-repeat center center',
-                "height": '300px'
+                "height": '300px',
+                "outline": 'none'
             };
 
             params = {
@@ -27,6 +28,7 @@ var app = angular.module('wedwebApp', []);
             $http.post('/rsvp', params).then(function success_cb(response){
                     $scope.dynamicStyle = {
                         "background": 'url(static/img/button_receive.png) no-repeat center center',
+                        "outline": 'none'
                     };
 
                     $scope.inputStyle = {
