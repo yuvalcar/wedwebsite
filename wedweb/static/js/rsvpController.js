@@ -21,8 +21,11 @@ var app = angular.module('wedwebApp', []);
                 $http.post('/rsvp', params).then(function success_cb(response){
                         $scope.dynamicStyle = {
                             "background": 'url(static/img/button_receive.png) no-repeat center center',
-                            "disabled": 'true',
                         };
+
+                        $scope.inputStyle = {
+                            "display": 'none',
+                        }
                     },
                     function error_cb(reponse) {
                         alert("Ho no!!! not all fields were filled :(");

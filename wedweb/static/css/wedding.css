@@ -83,6 +83,8 @@ p {
     height: 100%;
     text-align: center;
     background-color: transparent;
+    font-family: 'Roboto',sans-serif;
+    font-size: x-large;
 }
 
 .cool-button{
@@ -115,7 +117,20 @@ aside {
 }
 
 .map-padding {
-    padding-top: 100px;
+    padding-top: 50px;
+}
+
+.button-padding {
+    padding-top: 15px;
+}
+
+.form-padding {
+    padding-top: 20px;
+}
+
+.waze-padding{
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 header {
@@ -175,6 +190,7 @@ header .header-content {
         text-align: center;
         background-color: transparent;
         float: none;
+        font-family: 'Roboto',sans-serif;
     }
 
     .cool-button{
@@ -185,6 +201,11 @@ header .header-content {
         height: 109px;
         background: url(../img/button1.png) no-repeat center center;
         float: none;
+    }
+
+    .waze{
+        max-width: 70%;
+        max-height: 30%;
     }
 }
 
