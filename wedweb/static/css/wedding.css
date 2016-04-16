@@ -137,6 +137,12 @@ aside {
     max-width: 70%;
 }
 
+.no-display{
+    display: none;
+    width: 1px;
+    height: 1px;
+}
+
 header {
     position: relative;
     width: 100%;
