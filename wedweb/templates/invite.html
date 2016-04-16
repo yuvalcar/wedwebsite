@@ -46,15 +46,15 @@
 
     <section class="container form-padding" id="form">
         <div ng-app="wedwebApp" ng-controller="rsvpController">
-            <form>
+            <form ng-style="inputStyle">
                 <div class="row input-padding">
-                    <input type="text" ng-model="username" class="form-control input-lg center-block cool-input" ng-style="inputStyle" placeholder="Name">
+                    <input type="text" ng-model="username" class="form-control input-lg center-block cool-input" placeholder="Name">
                 </div>
                 <div class="row input-padding">
-                    <input type="text" ng-model="phone" class="form-control input-lg center-block cool-input" ng-style="inputStyle" placeholder="Phone">
+                    <input type="text" ng-model="phone" class="form-control input-lg center-block cool-input" placeholder="Phone">
                 </div>
                 <div class="row input-padding">
-                    <input type="text" ng-model="guests" class="form-control input-lg center-block cool-input" ng-style="inputStyle" placeholder="No. of Guests">
+                    <input type="text" ng-model="guests" class="form-control input-lg center-block cool-input" placeholder="No. of Guests">
                 </div>
             </form>
             <div class="row button-padding">
